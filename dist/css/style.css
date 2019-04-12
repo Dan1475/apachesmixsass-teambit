@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #58402C;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  background: white;
+}
+
+.nav {
+  width: 90%;
+  height: 70px;
+  margin: auto;
+  line-height: 70px;
+  border-bottom: 0.5px solid lightgrey;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .logo {
+  margin-top: 10px;
+}
+
+.nav span {
+  padding: 0 15px 0 15px;
+}
+
+.nav span:hover {
+  color: #30488F;
+  transition: 0.3s;
+}
+
+.nav span i {
+  margin-left: 5px;
+}
+
+.nav #signUp {
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #30488F;
+  color: #30488F;
+  width: 90px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.nav #signUp img {
+  width: 12px;
+  margin-right: 7px;
+  padding-top: 7px;
+}
+
+.nav #signUp:hover {
+  background: #30488F;
+  color: white;
+  transition: 0.3s;
+}
+
+.header {
+  width: 90%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  padding: 130px 0 60px 0;
+}
+
+.header .right {
+  width: 50%;
+}
+
+.header .right img {
+  width: 100%;
+}
+
+.header .left {
+  width: 50%;
+}
+
+.header .left h1 {
+  font-size: 50px;
+  padding-bottom: 25px;
+}
+
+.header .left p {
+  font-size: 22px;
+}
+
+.header .left img {
+  width: 12px;
+  margin-right: 7px;
+  padding-top: 7px;
+}
+
+.header .left button {
+  width: 170px;
+  height: 40px;
+  line-height: 40px;
+  background: #30488F;
+  color: white;
+  font-size: 12px;
+  border-radius: 10px;
+  border: none;
+  margin: 30px 0 30px 0;
+}
+
+.header .left small {
+  margin: 0 20px 0 20px;
+  color: grey;
+}
+
+.main {
+  width: 100%;
+  margin: auto;
+}
+
+.pinkBody {
+  background: #fcdabd;
+  text-align: center;
+}
+
+.pinkBody .first-section,
+.pinkBody .second-section {
+  width: 70%;
+  margin: auto;
+  border-bottom: 1px solid #bdb5af;
+  padding-top: 60px;
+}
+
+.pinkBody .first-section .bunny,
+.pinkBody .second-section .bunny {
+  width: 300px;
+  margin: 30px 0 70px 0;
+}
+
+.pinkBody .first-section .box-container,
+.pinkBody .second-section .box-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.pinkBody .first-section .box-container img,
+.pinkBody .second-section .box-container img {
+  width: auto;
+  height: 110px;
+  margin-bottom: 30px;
+}
+
+.feedback {
+  background: white;
+  padding: 60px 0 60px 0;
+  margin: auto;
+  display: flex;
+}
+
+.feedback .left img {
+  width: 80%;
+}
+
+.feedback .right {
+  padding-right: 50px;
+  text-align: left;
+}
+
+.feedback .right img {
+  width: 50%;
+  padding-top: 30px;
+}
+
+.feedback .right h2,
+.feedback .right p {
+  margin-bottom: 30px;
+}
+

@@ -1,0 +1,29 @@
+
+$color1 : #30488F;
+$color2: #58402C;
+$color3: #fcdabd;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: $color2;
+  font-family: 'Poppins', sans-serif;
+}
+
+@mixin my-flex{
+  display: flex;
+
+}
+
+@mixin posAbsolute{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+@mixin logosize{
+  width: 12px;
+  margin-right: 7px;
+  padding-top: 7px;
+}

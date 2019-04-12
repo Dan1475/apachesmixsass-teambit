@@ -1,0 +1,61 @@
+.main{
+   width: 100%;
+   margin: auto;
+
+}
+
+.pinkBody{
+  background: $color3;
+  text-align: center;
+
+  .first-section, .second-section{
+    width: 70%;
+    margin: auto;
+    border-bottom: 1px solid #bdb5af;
+    padding-top: 60px;
+
+
+   .bunny{
+     width: 300px;
+     margin: 30px 0 70px 0;
+   }
+
+    .box-container{
+      @include my-flex;
+      justify-content: space-around;
+      padding: 50px;
+
+
+      img{
+        width: auto;
+        height: 110px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.feedback{
+  background: white;
+  padding: 60px 0 60px 0;
+  margin: auto;
+  @include my-flex;
+
+  .left img{
+    width: 80%;
+  }
+
+  .right {
+   padding-right: 50px;
+   text-align: left;
+    img{
+    width: 50%;
+    padding-top: 30px;
+  }
+
+    h2, p {
+      margin-bottom: 30px;
+    }
+  }
+
+}
