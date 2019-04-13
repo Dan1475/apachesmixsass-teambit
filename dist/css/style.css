@@ -19,10 +19,11 @@
   height: 70px;
   margin: auto;
   line-height: 70px;
-  border-bottom: 0.5px solid lightgrey;
+  border-bottom: 0.5px solid #bdb5af;
   font-size: 12px;
   font-weight: bold;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -44,7 +45,7 @@
 }
 
 .nav #signUp {
-  background: white;
+  background: #FFF;
   border-radius: 10px;
   border: 1px solid #30488F;
   color: #30488F;
@@ -63,7 +64,7 @@
 
 .nav #signUp:hover {
   background: #30488F;
-  color: white;
+  color: #FFF;
   transition: 0.3s;
 }
 
@@ -71,6 +72,7 @@
   width: 90%;
   height: auto;
   display: flex;
+  flex-wrap: wrap;
   margin: auto;
   padding: 130px 0 60px 0;
 }
@@ -107,7 +109,7 @@
   height: 40px;
   line-height: 40px;
   background: #30488F;
-  color: white;
+  color: #FFF;
   font-size: 12px;
   border-radius: 10px;
   border: none;
@@ -116,12 +118,13 @@
 
 .header .left small {
   margin: 0 20px 0 20px;
-  color: grey;
+  color: #bdb5af;
 }
 
 .main {
   width: 100%;
   margin: auto;
+  padding-bottom: 60px;
 }
 
 .pinkBody {
@@ -134,7 +137,7 @@
   width: 70%;
   margin: auto;
   border-bottom: 1px solid #bdb5af;
-  padding-top: 60px;
+  padding: 60px 0 60px 0;
 }
 
 .pinkBody .first-section .bunny,
@@ -146,40 +149,196 @@
 .pinkBody .first-section .box-container,
 .pinkBody .second-section .box-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 50px;
 }
 
-.pinkBody .first-section .box-container img,
-.pinkBody .second-section .box-container img {
+.pinkBody .first-section .box-container .left,
+.pinkBody .first-section .box-container .right,
+.pinkBody .first-section .box-container .center,
+.pinkBody .second-section .box-container .left,
+.pinkBody .second-section .box-container .right,
+.pinkBody .second-section .box-container .center {
+  display: inline;
+  width: calc(100% / 3);
+}
+
+.pinkBody .first-section .box-container .left img,
+.pinkBody .first-section .box-container .right img,
+.pinkBody .first-section .box-container .center img,
+.pinkBody .second-section .box-container .left img,
+.pinkBody .second-section .box-container .right img,
+.pinkBody .second-section .box-container .center img {
   width: auto;
   height: 110px;
   margin-bottom: 30px;
 }
 
+.whitebg {
+  width: 100%;
+  background: #FFF;
+}
+
 .feedback {
-  background: white;
+  width: 80%;
   padding: 60px 0 60px 0;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
 }
 
-.feedback .left img {
-  width: 80%;
+.feedback .img-section {
+  width: 50%;
 }
 
-.feedback .right {
-  padding-right: 50px;
+.feedback .img-section img {
+  width: 100%;
+}
+
+.feedback .text-section {
+  width: 50%;
   text-align: left;
 }
 
-.feedback .right img {
+.feedback .text-section img {
   width: 50%;
   padding-top: 30px;
 }
 
-.feedback .right h2,
-.feedback .right p {
+.feedback .text-section h2,
+.feedback .text-section p {
   margin-bottom: 30px;
+}
+
+.feedback .text-section small {
+  color: #30488F;
+  display: block;
+}
+
+.feedback .text-section small i {
+  color: inherit;
+}
+
+.pinkBody .big-h2 {
+  font-size: 35px;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.pinkBody .blockquote {
+  width: 70%;
+  background: #FFF;
+  height: auto;
+  margin: auto;
+  padding: 40px;
+  border: 1px solid #bdb5af;
+  text-align: left;
+}
+
+.pinkBody .blockquote p {
+  font-size: 15px;
+}
+
+.pinkBody .blockquote .author {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 15px;
+}
+
+.pinkBody .blockquote .author img {
+  width: 40px;
+}
+
+.pinkBody .blockquote .author .author-name {
+  padding-left: 15px;
+}
+
+.pinkBody .blockquote .author .author-name h3 {
+  font-size: 12px;
+  color: #30488F;
+}
+
+.pinkBody .blockquote .author .author-name small {
+  font-size: 10px;
+}
+
+.pinkBody .button img {
+  width: 12px;
+  margin-right: 7px;
+  padding-top: 7px;
+}
+
+.pinkBody .button button {
+  width: 170px;
+  height: 40px;
+  line-height: 40px;
+  background: #30488F;
+  color: #FFF;
+  font-size: 12px;
+  border-radius: 10px;
+  border: none;
+  margin: 30px 0 30px 0;
+}
+
+.pinkBody .button small {
+  margin: 0 20px 0 20px;
+  color: #bdb5af;
+}
+
+.footer {
+  width: 100%;
+  background: #FFF;
+  margin: auto;
+  padding: 30px 0 60px 0;
+}
+
+.footer .footer-section {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer .footer-section .logo-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footer-section .logo-section img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer .footer-section .logo-section .testo {
+  width: 70%;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+.footer .footer-section .logo-section .testo a {
+  color: #30488F;
+  text-decoration: none;
+}
+
+.footer .footer-section .service-section {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  line-height: 35px;
+}
+
+.footer .footer-section .service-section div {
+  width: calc(100% / 5);
+}
+
+.footer .footer-section .service-section div li {
+  font-size: 13px;
+  list-style: none;
 }
 

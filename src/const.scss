@@ -2,7 +2,8 @@
 $color1 : #30488F;
 $color2: #58402C;
 $color3: #fcdabd;
-
+$color4: #bdb5af;
+$color5: #FFF;
 *{
   box-sizing: border-box;
   margin: 0;
@@ -13,6 +14,7 @@ $color3: #fcdabd;
 
 @mixin my-flex{
   display: flex;
+  flex-wrap: wrap;
 
 }
 

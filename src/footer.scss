@@ -1,0 +1,62 @@
+.footer{
+  width: 100%;
+  background: $color5;
+  margin: auto;
+  padding: 30px 0 60px 0;
+
+  .footer-section{
+      margin: auto;
+    width: 90%;
+
+    @include my-flex;
+    justify-content: space-around;
+
+  .logo-section{
+    @include my-flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+
+
+    img{
+    width: 50px;
+    height: 50px;
+
+    }
+
+    .testo{
+     width: 70%;
+     margin-left: 30px;
+     font-weight: bold;
+
+
+     a{
+       color: $color1;
+       text-decoration: none;
+
+     }
+    }
+  }
+
+  .service-section{
+    width: 60%;
+
+    display: flex;
+    justify-content: space-between;
+    line-height: 35px;
+
+    div{
+
+      width: calc(100% / 5);
+
+    li{
+
+      font-size: 13px;
+      list-style: none;
+
+     }
+
+    }
+  }
+  }
+}
