@@ -23,7 +23,6 @@
   font-size: 12px;
   font-weight: bold;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -69,42 +68,50 @@
 }
 
 .header {
-  width: 90%;
-  height: auto;
+  max-width: 90vw;
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  padding: 130px 0 60px 0;
+  justify-content: center;
+  align-items: center;
+  padding: 15% 0 60px 0;
 }
 
-.header .right {
-  width: 50%;
+.header .right-claim {
+  width: 600px;
 }
 
-.header .right img {
+.header .right-claim img {
   width: 100%;
 }
 
-.header .left {
-  width: 50%;
+.header .left-claim {
+  width: 550px;
 }
 
-.header .left h1 {
-  font-size: 50px;
+.header .left-claim .claim {
+  width: 100%;
+}
+
+.header .left-claim .claim h1 {
+  font-size: 40px;
   padding-bottom: 25px;
+  line-height: 70px;
+  letter-spacing: 3px;
 }
 
-.header .left p {
-  font-size: 22px;
+.header .left-claim .claim p {
+  font-size: 18px;
+  letter-spacing: 2px;
 }
 
-.header .left img {
+.header .left-claim .claim img {
   width: 12px;
   margin-right: 7px;
   padding-top: 7px;
 }
 
-.header .left button {
+.header .left-claim .claim button {
   width: 170px;
   height: 40px;
   line-height: 40px;
@@ -116,18 +123,19 @@
   margin: 30px 0 30px 0;
 }
 
-.header .left small {
+.header .left-claim .claim small {
   margin: 0 20px 0 20px;
   color: #bdb5af;
 }
 
 .main {
-  width: 100%;
+  width: 100vw;
   margin: auto;
   padding-bottom: 60px;
 }
 
 .pinkBody {
+  width: 100%;
   background: #fcdabd;
   text-align: center;
 }
@@ -148,6 +156,7 @@
 
 .pinkBody .first-section .box-container,
 .pinkBody .second-section .box-container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -160,8 +169,7 @@
 .pinkBody .second-section .box-container .left,
 .pinkBody .second-section .box-container .right,
 .pinkBody .second-section .box-container .center {
-  display: inline;
-  width: calc(100% / 3);
+  width: 285px;
 }
 
 .pinkBody .first-section .box-container .left img,
@@ -171,7 +179,7 @@
 .pinkBody .second-section .box-container .right img,
 .pinkBody .second-section .box-container .center img {
   width: auto;
-  height: 110px;
+  max-height: 110px;
   margin-bottom: 30px;
 }
 
@@ -181,7 +189,7 @@
 }
 
 .feedback {
-  width: 80%;
+  width: 90%;
   padding: 60px 0 60px 0;
   margin: auto;
   display: flex;
@@ -189,7 +197,7 @@
 }
 
 .feedback .img-section {
-  width: 50%;
+  width: 600px;
 }
 
 .feedback .img-section img {
@@ -197,7 +205,7 @@
 }
 
 .feedback .text-section {
-  width: 50%;
+  width: 550px;
   text-align: left;
 }
 
@@ -243,7 +251,6 @@
 
 .pinkBody .blockquote .author {
   display: flex;
-  flex-wrap: wrap;
   padding-top: 15px;
 }
 
@@ -304,10 +311,10 @@
 
 .footer .footer-section .logo-section {
   display: flex;
-  flex-wrap: wrap;
-  width: 40%;
+  width: 470px;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .footer .footer-section .logo-section img {
@@ -327,14 +334,15 @@
 }
 
 .footer .footer-section .service-section {
-  width: 60%;
+  width: 730px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   line-height: 35px;
 }
 
 .footer .footer-section .service-section div {
-  width: calc(100% / 5);
+  max-width: 145px;
 }
 
 .footer .footer-section .service-section div li {

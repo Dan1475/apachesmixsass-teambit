@@ -1,11 +1,12 @@
 .main{
-   width: 100%;
+   width: 100vw;
    margin: auto;
    padding-bottom: 60px;
 
 }
 
 .pinkBody{
+  width: 100%;
   background: $color3;
   text-align: center;
 
@@ -15,28 +16,26 @@
     border-bottom: 1px solid $color4;
     padding: 60px 0 60px 0;
 
-
-
-
-
    .bunny{
      width: 300px;
      margin: 30px 0 70px 0;
    }
 
     .box-container{
+      width: 100%;
       @include my-flex;
+      flex-wrap: wrap;
       justify-content: space-around;
       padding: 50px;
 
      .left, .right, .center{
-       display: inline;
-       width: calc(100% / 3);
+       // display: inline;
+       width: 285px;
 
        img{
 
          width: auto;
-         height: 110px;
+         max-height: 110px;
          margin-bottom: 30px;
        }
      }
@@ -50,13 +49,14 @@
   background: $color5;
 }
 .feedback{
-  width: 80%;
+  width: 90%;
   padding: 60px 0 60px 0;
   margin: auto;
   @include my-flex;
+  flex-wrap: wrap;
 
   .img-section {
-   width: 50%;
+   width: 600px;
 
     img{
 
@@ -65,7 +65,7 @@
 }
 
   .text-section {
-   width: 50%;
+   width: 550px;
    text-align: left;
 
     img{

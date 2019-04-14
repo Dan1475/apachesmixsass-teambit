@@ -9,13 +9,15 @@
     width: 90%;
 
     @include my-flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 
   .logo-section{
     @include my-flex;
-    width: 40%;
+    width: 470px;
     justify-content: center;
     align-items: center;
+    padding-bottom: 20px;
 
 
     img{
@@ -39,15 +41,16 @@
   }
 
   .service-section{
-    width: 60%;
+    width: 730px;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     line-height: 35px;
 
     div{
 
-      width: calc(100% / 5);
+      max-width: 145px;
 
     li{
 
