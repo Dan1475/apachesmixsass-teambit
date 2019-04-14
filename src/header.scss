@@ -28,6 +28,16 @@
   .logo{
     margin-top: 10px;
   }
+
+  .menu{
+
+    @media screen and (max-width: 900px){
+
+    display: none;
+
+
+    }
+
   span{
 
     padding: 0 15px 0 15px;
@@ -38,6 +48,8 @@
     i{
       margin-left: 5px;
     }
+  }
+
   }
 
   #signUp {
@@ -61,6 +73,15 @@
      transition: 0.3s;
   }
   }
+  .hamburger{
+    display: none;
+    @media screen and (max-width: 900px){
+
+    display: block;
+
+
+    }
+  }
 }
 
 
@@ -74,7 +95,7 @@
   padding: 15% 0 60px 0;
 
   .right-claim{
-    width: 600px;
+    max-width: 600px;
 
     img{
       width: 100%;
@@ -83,7 +104,7 @@
 
 
   .left-claim{
-    width: 550px;
+    max-width: 550px;
 
    .claim{
    width: 100%;

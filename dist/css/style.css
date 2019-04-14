@@ -30,16 +30,22 @@
   margin-top: 10px;
 }
 
-.nav span {
+@media screen and (max-width: 900px) {
+  .nav .menu {
+    display: none;
+  }
+}
+
+.nav .menu span {
   padding: 0 15px 0 15px;
 }
 
-.nav span:hover {
+.nav .menu span:hover {
   color: #30488F;
   transition: 0.3s;
 }
 
-.nav span i {
+.nav .menu span i {
   margin-left: 5px;
 }
 
@@ -67,6 +73,16 @@
   transition: 0.3s;
 }
 
+.nav .hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .nav .hamburger {
+    display: block;
+  }
+}
+
 .header {
   max-width: 90vw;
   display: flex;
@@ -78,7 +94,7 @@
 }
 
 .header .right-claim {
-  width: 600px;
+  max-width: 600px;
 }
 
 .header .right-claim img {
@@ -86,7 +102,7 @@
 }
 
 .header .left-claim {
-  width: 550px;
+  max-width: 550px;
 }
 
 .header .left-claim .claim {
@@ -339,10 +355,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   line-height: 35px;
-}
-
-.footer .footer-section .service-section div {
-  max-width: 145px;
 }
 
 .footer .footer-section .service-section div li {
